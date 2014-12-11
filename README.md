@@ -6,11 +6,12 @@ Executes `jshint` command inside the source directory and presents these errors,
 
 # What's new
 
-- Update to jshint `2.3.0`
+- Don't use static JSHint version, now you MUST specify version using `version` parameter.
 
 # Options
 
-None
+ - `version` (required)
+    - JSHint version to use
 
 # Example
 
@@ -19,7 +20,8 @@ Run `jshint`:
 ``` yaml
 build:
   steps:
-    - jshint
+    - jshint:
+        version: 2.3.0
 ```
 
 # License
@@ -27,6 +29,10 @@ build:
 The MIT License (MIT)
 
 # Changelog
+
+## 2.0.0
+
+- Don't use static JSHint version, now you MUST specify version using `version` parameter.
 
 ## 1.0.0
 
