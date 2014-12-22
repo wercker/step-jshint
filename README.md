@@ -1,27 +1,35 @@
 # jshint
 
-Executes `jshint` command inside the source directory and presents these errors, if any, in the wercker user interface.
+Executes `jshint` command inside the source directory and presents the errors,
+if any, in the wercker user interface.
 
 [![wercker status](https://app.wercker.com/status/9c3905a0a14be38a75d857e1f7ffdeda/m "wercker status")](https://app.wercker.com/project/bykey/9c3905a0a14be38a75d857e1f7ffdeda)
 
 # What's new
 
-- Don't use static JSHint version, now you MUST specify version using `version` parameter.
+- Allow user to specify JSHint version.
 
 # Options
 
- - `version` (required)
-    - JSHint version to use
+* `version` (optional, default: `2.3.0`) Version of jshint to install and use.
 
 # Example
 
 Run `jshint`:
 
-``` yaml
+```yaml
 build:
-  steps:
-    - jshint:
-        version: 2.3.0
+    steps:
+        - jshint
+```
+
+Run `jshint@2.4.0`:
+
+```yaml
+build:
+    steps:
+        - jshint:
+            version: 2.4.0
 ```
 
 # License
@@ -32,7 +40,7 @@ The MIT License (MIT)
 
 ## 2.0.0
 
-- Don't use static JSHint version, now you MUST specify version using `version` parameter.
+- Allow user to specify JSHint version.
 
 ## 1.0.0
 
