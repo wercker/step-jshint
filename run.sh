@@ -1,6 +1,5 @@
 if [ ! -n "$WERCKER_JSHINT_VERSION" ]; then
-    error 'Please specify JSHint version'
-    exit 1
+    fail 'Please specify JSHint version'
 fi
 
 sudo npm install jshint@$WERCKER_JSHINT_VERSION -g
