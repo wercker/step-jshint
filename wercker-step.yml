@@ -6,4 +6,4 @@ report-type: jslint
 properties:
   version:
     type: string
-    default: 2.3.0
+    default: 2.6.0
