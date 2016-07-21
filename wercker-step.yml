@@ -1,5 +1,5 @@
 name: jshint
-version: 2.0.0
+version: 3.0.0
 type: build
 report-filename: jshint.xml
 report-type: jslint
@@ -7,3 +7,6 @@ properties:
   version:
     type: string
     default: 2.3.0
+  type:
+    type: string
+    default: artifact

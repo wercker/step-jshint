@@ -5,13 +5,11 @@ if any, in the wercker user interface.
 
 [![wercker status](https://app.wercker.com/status/9c3905a0a14be38a75d857e1f7ffdeda/m "wercker status")](https://app.wercker.com/project/bykey/9c3905a0a14be38a75d857e1f7ffdeda)
 
-# What's new
-
-- Allow user to specify JSHint version.
-
 # Options
 
 * `version` (optional, default: `2.3.0`) Version of jshint to install and use.
+* `type` (optional, default: `artifact`) Change the output type of the step.
+  Currently support `artifact`, `stdout`.
 
 # Example
 
@@ -37,6 +35,10 @@ build:
 The MIT License (MIT)
 
 # Changelog
+
+## 3.0.0
+
+- Allow different output types.
 
 ## 2.0.0
 
