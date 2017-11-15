@@ -1,0 +1,10 @@
+name: jshint
+version: 4.0.0
+summary: jshint step
+properties:
+- name: version
+  type: string
+  default: 2.3.0
+- name: type
+  type: string
+  default: artifact
