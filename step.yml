@@ -1,5 +1,5 @@
 name: jshint
-version: 4.0.0
+version: 4.0.1
 summary: jshint step
 properties:
 - name: version
